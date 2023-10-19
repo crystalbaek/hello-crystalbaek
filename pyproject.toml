@@ -1,6 +1,6 @@
 [project]
 name = "hello-crystalbaek"
-version = "0.1.1"
+version = "0.3.0"
 description = ""
 authors = [
     {name = "crystalbaek", email = "bfilkll730@gmail.com"},
@@ -13,3 +13,9 @@ license = {text = "MIT"}
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.2",
+    "pytest-cov>=4.1.0",
+]
